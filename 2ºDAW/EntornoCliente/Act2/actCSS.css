@@ -1,0 +1,17 @@
+
+
+
+h1 { 
+    color : "red"; 
+    
+ }
+
+#estado { 
+    padding: 10px;
+     border: 1px solid 
+     }
+
+.texto-ruso { color: red; }
+.texto-ingles { color: blue; }
+#texto-español { color: green; }
+.sistema-activo { background-color: green; color: white; }

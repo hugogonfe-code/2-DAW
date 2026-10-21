@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+  <html lang="es">
+    
+<head>
+    <meta charset="UTF-8">  
+    <link rel="stylesheet" href="actCSS.css">
+</head>
+
+
+
+<body>
+  <h1 id ="h1">Modificando el código HTML</h1>
+  <p id="prueba">Modificando el contenido.</p>
+  
+  <button type="button" onclick="document.getElementById('prueba').innerHTML = 'CAMBIANDO el contenido!'">
+    ¡Dale!
+  </button>
+
+  <!--Ejercicio 1 -->
+  <button type="button" onclick="
+  document.getElementById('h1').innerHTML = 'Contenido cambiado';
+    document.getElementById('prueba').innerHTML = 'Contenido cambiado'">
+    Cambiar h1
+  </button>
+  <!--Ejercicio 2 --> 
+  <button type="button" onclick="
+  console.log('Evento trazado')">   
+    Trazar Evento
+</button>
+<br><br><br>
+
+  <!--Ejercicio 3-->
+  <h1>Mensaje de alerta</h1>
+   <button type="button" onclick="
+  alert('Mensaje de alerta')">
+    Mensaje de alerta   
+</button>
+<br><br>
+
+  <!--Ejercicio 4-->
+<p id="idioma">
+    Idioma
+</p>
+<button type="idioma" onclick="
+  document.getElementById('idioma').innerHTML ='Privyet';
+  
+  ">
+Ruso
+</button>
+
+<button type="idioma" onclick="
+  document.getElementById('idioma').innerHTML ='Hello'
+  
+  ">
+Ingles
+</button>
+
+<button id="texto-español "type="idioma" onclick="
+  document.getElementById('idioma').innerHTML ='Hola'
+  
+  ">
+Español
+</button>
+<br><br>
+
+  <!--Ejercicio 5-->
+<button type="button" onclick="
+  console.log('Hola')">
+    Español
+</button>
+<button type="button" onclick="
+  console.log('Hello')">
+    Ingles
+</button>
+<button type="button" onclick="
+  console.log('Privyet')">
+    Ruso
+</button>
+<br><br>
+
+
+
+
+
+<!--Ejercicio 6-->
+<h1> Transforma el codigo utilizando el document.write()</h1>
+ <button type="button" onclick="
+    document.write('<h3>Hello</h3> ')">
+    Ingles
+  </button>
+<button type="button" onclick="
+    document.write('<h3>Hola</h3>')">
+    Español
+  </button>
+  <button type="button" onclick="
+    document.write('<h3>Priviyet</h3>')">
+    Ruso
+  </button>
+<br><br>
+
+
+    <!--Ejercicio 7-->
+    
+    <p id="estado">Sistema en espera</p>
+
+<button type="button" onclick="console.log(new Date().toLocaleTimeString())">
+  Botón 1 
+</button>
+
+    <button type="button" onclick="
+    document.getElementById('estado').innerHTML='Sistema activo';
+    document.getElementById('estado').style.backgroundColor='green';">
+    boton 2
+    </button>
+   <button type="button" onclick="
+  alert('El proceso ha concluido')">
+    Mensaje de alerta   
+</button>
+
+    <!--Ejercicio 8-->
+    <h1> Test interactivo </h1>
+
+<p id="V">1. HTML se utiliza para diseñar y dar estilo visual a una página web</p>
+<button type="button" onclick="
+  document.getElementById('V').style.color = 'green'">
+  Verdadero
+</button>
+
+<button type="button" onclick="
+  document.getElementById('V').style.color = 'red'">
+  Falso
+</button>
+
+<p id="V2">2. La etiqueta h1 representa el título principal y más importante de una página web</p>
+<button type="button" onclick="
+  document.getElementById('V2').style.color = 'green'">
+  Verdadero
+</button>
+
+<button type="button" onclick="
+  document.getElementById('V2').style.color = 'red'">
+  Falso
+</button>
+
+<p id="F">3. Todas las etiquetas en HTML se deben cerrar obligatoriamente con una etiqueta de cierre como </etiqueta></p>
+<button type="button" onclick="
+  document.getElementById('F').style.color = 'green'">
+  Verdadero
+</button>
+
+<button type="button" onclick="
+  document.getElementById('F').style.color = 'red'">
+  Falso
+</button>
+
+<p id="F2">4. Para crear un enlace a otra página web se utiliza la etiqueta <a> junto con el atributo href.</p>
+<button type="button" onclick="
+  document.getElementById('F2').style.color = 'green'">
+  Verdadero
+</button>
+
+<button type="button" onclick="
+  document.getElementById('F2').style.color = 'red'">
+  Falso
+</button>
+
+<p id="V3">5. El contenido escrito dentro de la etiqueta <head> es lo que el usuario ve directamente en la pantalla de su navegador.</p>
+<button type="button" onclick="
+  document.getElementById('V3').style.color = 'green'">
+  Verdadero
+</button>
+
+<button type="button" onclick="
+  document.getElementById('V3').style.color = 'red'">
+  Falso
+</button>
+
+<p id="V4">6. La etiqueta br sirve para insertar un salto de línea en el texto.</p>
+<button type="button" onclick="
+  document.getElementById('V4').style.color = 'green'">
+  Verdadero
+</button>
+
+<button type="button" onclick="
+  document.getElementById('V4').style.color = 'red'">
+  Falso
+</button>
+
+<p id="F3">7. HTML es un lenguaje de programación.</p>
+<button type="button" onclick="
+  document.getElementById('F3').style.color = 'green'">
+  Verdadero
+</button>
+
+<button type="button" onclick="
+  document.getElementById('F3').style.color = 'red'">
+  Falso
+</button>
+
+
+<!--Ejercicio 8-->
+<!--Ejercicio 9-->
+<h1> Secuencia de imagenes </h1>
+<p>Pincha en la imagen para ver la siguiente</p>
+
+<img id="imagen"  
+     src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTX5ndbHAemdtqv1aNNn58EZ-spnMkWSVuz0pd5nzgVBA&s=10"
+     width="400" onclick="
+        if (this.src == 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa9AyEB-MyxRfhn7amM15GFqjhFPVXHFZbThH4LOcCWA&s=10') {
+            this.src = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvI-q_mNwwJW24fMKbh5QG-lSDtdNPQSit85xZjt5Z_A&s=10';
+        } 
+        else if (this.src == 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvI-q_mNwwJW24fMKbh5QG-lSDtdNPQSit85xZjt5Z_A&s=10') {
+            this.src = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9I9gawgLUYATHUojgpstEa6NFQetSGmu8SomZ_G439A&s=10';
+        } 
+        else if (this.src == 'https:') {
+            this.src = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9I9gawgLUYATHUojgpstEa6NFQetSGmu8SomZ_G439A&s=10';
+        } 
+        else {
+            this.src = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa9AyEB-MyxRfhn7amM15GFqjhFPVXHFZbThH4LOcCWA&s=10';
+        }
+     ">
+
+</body>
+</html>
+

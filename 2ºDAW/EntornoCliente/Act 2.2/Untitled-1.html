@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        console.log(0 || "Fallback");
+        console.log(0 ?? "Fallback");
+        console.log(5 + "5");
+        let i = 2; console.log(i++ * ++i);
+
+    </script>
+
+    <h2>Ejercicio 2</h2>
+
+    <script>
+     
+// 1. Demostración de ámbito de bloque e inmutabilidad
+var variableGlobal = "Accesible fuera";
+
+{
+    let variableLocal = "Aislada en bloque";
+    const CONFIG_APP = {
+        version: "1.0.0",
+        entorno: "test"
+    };
+
+    // Mutabilidad de una propiedad de un objeto declarado con const
+    CONFIG_APP.entorno = "produccion";
+
+    console.log("Objeto modificado:", CONFIG_APP);
+    console.log("Variable local:", variableLocal);
+}
+
+console.log("Variable global:", variableGlobal);
+
+// 2. Comprobaciones con el operador typeof
+console.log("typeof 50n:", typeof 50n);             // bigint
+console.log("typeof Symbol():", typeof Symbol());   // symbol
+console.log("typeof null:", typeof null);           // object (anomalía histórica)
+console.log("typeof NaN:", typeof NaN);             // number
+
+// 3. Coerción y comparaciones
+console.log("5 == '5':", 5 == "5");     // true (igualdad abstracta)
+console.log("5 === '5':", 5 === "5");   // false (igualdad estricta)
+console.log("5 + '5':", 5 + "5");       // "55" (concatenación)
+console.log("5 - '5':", 5 - "5");       // 0 (conversión numérica)
+
+// 4. Operadores especiales: in, delete e instanceof
+const alumno = {
+    id: 1001,
+    curso: "2 DAW",
+    activo: true
+};
+
+// Operador in: comprueba si existe una propiedad en el objeto
+console.log("¿Tiene la propiedad 'curso'?:", "curso" in alumno); // true
+
+// Operador delete: elimina una propiedad del objeto
+delete alumno.activo;
+
+console.log("Objeto tras el borrado:", alumno);
+
+// Operador instanceof: comprueba si un objeto pertenece a un tipo
+console.log("¿alumno es instancia de Object?:", alumno instanceof Object); // true
+
+    </script>
+
+   
+
+    
+
+</body>
+
+</html>

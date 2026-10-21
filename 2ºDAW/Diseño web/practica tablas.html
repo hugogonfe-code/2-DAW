@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <table border="2">
+        <tr bgcolor="red">
+            <th>
+                H1
+            </th>
+            <th colspan="2"> H2</th>
+            <th colspan="3"> H3</th>
+        </tr>
+
+        <tr bgcolor="yellow">
+            <td> A</td>
+            <td> B</td>
+            <td>c</td>
+
+            <td rowspan="2">D</td>
+            <td>E</td>
+            <td rowspan="3">F</td>
+        </tr>
+
+        <tr bgcolor="yellow">
+            <td>G</td>
+            <td rowspan="2">H</td>
+
+            <td>I</td>
+            <td>J</td>
+        </tr>
+
+
+        <tr bgcolor="red">
+            <td>K</td>
+            <td colspan="2">L</td>
+            <td>M</td>
+
+        </tr>
+
+    </table>
+
+    <br><br>
+    <form>
+        <fieldset>
+            <legend></legend>
+            <label for="nombre">Asignatura </label>
+            <input id="nombre" type="text"><br><br>
+
+
+
+
+
+
+            <label for="estudios">Horario: </label>
+            <select id="estudios">
+                <option>Mañana</option>
+                <option>Tarde</option>
+            </select>
+            <br><br>
+
+
+            <label for="estudios">Hora: </label>
+            <select id="estudios">
+                <optgroup label="Horas">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                </optgroup>
+            </select>
+            <br><br>
+
+
+            <label>Curso: </label>
+            <input type="checkbox" value="20-39"> 2026-2027
+            <input type="checkbox" value="40-59"> 2027-2028
+            <br><br>
+
+            <label for="navegador">Asignaturas: </label>
+            <input id="navegador" list="browsers">
+            <datalist id="browsers">
+                <option value="servidor">1</option>
+                <option value="cliente">2</option>
+                <option value="diseño">3</option>
+                <option value="ingle">4</option>
+            </datalist><br><br>
+            <label>Op1</label>
+            <input type="radio" value="1">1
+            <input type="radio" value="2">2
+            <input type="radio" value="3">3
+
+            <br><br>
+            <input type="number">
+            <br><br>
+            <input type="submit">
+            <br><br>
+            <textarea cols="30" rows="10"></textarea>
+            <br><br>
+            <label for="text">Comentarios</label>
+<br><br>
+<label>Introduzca un numero</label>
+<br>
+            <input type="number" min="10" max="99">
+
+            <br><br>
+
+            <input type="color">
+                <br><br>
+            <input type="password">
+<br><br>
+
+
+<input type="reset">
+
+
+<br><br>
+<br><br><br><br>
+
+
+
+
+
+
+
+
+        </fieldset>
+
+    </form>
+</body>
+
+</html>

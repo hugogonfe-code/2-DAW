@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+
+  <script>
+
+    function calcularDiasDiferencia(fechaInicio, fechaFin) {
+      const inicio = new Date(fechaInicio);
+      const fin = new Date(fechaFin);
+
+      const inicioMs = inicio.getTime();
+      const finMs = fin.getTime();
+
+      const diferenciaMs = Math.abs(finMs - inicioMs);
+
+      const msPorDia = 1000 * 60 * 60 * 24;
+
+      const diasDiferencia = Math.round(diferenciaMs / msPorDia);
+
+      return diasDiferencia;
+    }
+
+
+    const PrimeraFecha = "2026-10-01";
+    const UltimaFecha = "2026-03-30";
+    console.log(`Días de diferencia: ${calcularDiasDiferencia(PrimeraFecha, UltimaFecha)}`);
+
+  </script>
+
+
+
+  <script>
+    function obtenerUltimoDiaMes(año, mes) {
+      const fecha = new Date(año, mes, 0);
+      return fecha.getDate();
+    }
+    console.log(obtenerUltimoDiaMes(2026, 2));
+    console.log(obtenerUltimoDiaMes(2024, 2));
+    console.log(obtenerUltimoDiaMes(2026, 4));
+    console.log(obtenerUltimoDiaMes(2026, 12));
+
+  </script>
+
+  <script>
+    function formatearFecha(fecha) {
+    const dia = String(fecha.getDate()).padStart(2, "0");
+    const mes = String(fecha.getMonth() + 1).padStart(2, "0");
+    const año = fecha.getFullYear();
+    const horas = String(fecha.getHours()).padStart(2, "0");
+    const minutos = String(fecha.getMinutes()).padStart(2, "0");
+
+    return dia + "/" + mes + "/" + año + " " + horas + ":" + minutos;
+    } 
+           
+    const fechaPrueba = new Date(2026, 8, 5, 9, 4);
+    console.log(formatearFecha(fechaPrueba));
+  </script>
+
+<h1>Comprobación de errores en tiempo de ejecución</h1>
+
+ 
+
+<script src="calculo.js"></script>
+</body>
+
+</html>
